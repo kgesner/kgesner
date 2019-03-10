@@ -1,8 +1,24 @@
+body {
+  padding-bottom: 10rem;
+}
+
 header {
   background: url(../images/background-image.jpg) center / cover;
   height: 60vh;
   justify-content: center;
   text-align: center;
+}
+
+main {
+  max-width: 900px;
+}
+
+.project-description {
+  padding-left: 0;
+}
+
+.project img {
+  width: 100%;
 }
 
 h1 {
@@ -16,7 +32,27 @@ h1 {
   font-size: 1.6rem;
 }
 
-@media screen and (max-width: 1024px)
-.mdl-layout__header {
-    display: block;
+footer.mdl-mini-footer {
+  bottom: 0;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+footer.mdl-mini-footer > ul {
+  margin: auto;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .mdl-layout__header {
+      display: block;
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+  header.mdl-layout__header {
+    display: flex;
+  }
 }
